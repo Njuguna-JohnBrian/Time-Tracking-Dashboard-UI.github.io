@@ -1,0 +1,67 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: hsl(226, 43%, 10%);
+  font-family: "Rubik";
+}
+.header-card {
+  display: flex;
+  flex-direction: column;
+  margin: 50px 30px 0px 30px;
+  /* Add Margin bottom after adding more cards */
+  background-color: hsl(235, 46%, 20%);
+  margin: 50px 30px 0px 30px;
+  border-radius: 10px 10px;
+}
+.profile {
+  background-color: hsl(246, 80%, 60%);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 300;
+  border-radius: 10px 10px 10px 10px;
+}
+.profile-image {
+  width: 30%;
+}
+
+#profile-image {
+  width: 70%;
+  display: flex;
+  margin: 0 10%;
+}
+.profile-details {
+  width: 70%;
+  color: white;
+}
+.timeline {
+  background-color: hsl(235, 46%, 20%);
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 15px 0px 15px;
+  font-size: 18px;
+  font-weight: 300;
+  border-radius: 10px 10px;
+  color: hsl(235, 45%, 61%);
+}
+.timeline p:nth-child(2) {
+  color: white;
+}
+.attribution {
+  bottom: 0;
+  position: fixed;
+}
+
+/* WORK CARD */
+.work-card {
+  display: flex;
+  margin: 50px 30px 0px 30px;
+  border-radius: 10px 10px;
+  background-color: hsl(15, 100%, 70%);
+}
+
+.work-card img{
+  float: right;
+}
