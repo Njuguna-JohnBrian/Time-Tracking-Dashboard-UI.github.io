@@ -1,19 +1,20 @@
 * {
   box-sizing: border-box;
 }
+
 body {
   background-color: hsl(226, 43%, 10%);
   font-family: "Rubik";
 }
+
 .header-card {
   display: flex;
   flex-direction: column;
   margin: 50px 30px 0px 30px;
-  /* Add Margin bottom after adding more cards */
   background-color: hsl(235, 46%, 20%);
-  margin: 50px 30px 0px 30px;
-  border-radius: 10px 10px;
+  border-radius: 10px;
 }
+
 .profile {
   background-color: hsl(246, 80%, 60%);
   display: flex;
@@ -23,8 +24,10 @@ body {
   font-weight: 300;
   border-radius: 10px 10px 10px 10px;
 }
+
 .profile-image {
   width: 30%;
+  border-radius: 50%;
 }
 
 #profile-image {
@@ -32,10 +35,12 @@ body {
   display: flex;
   margin: 0 10%;
 }
+
 .profile-details {
   width: 70%;
   color: white;
 }
+
 .timeline {
   background-color: hsl(235, 46%, 20%);
   display: flex;
@@ -46,22 +51,161 @@ body {
   border-radius: 10px 10px;
   color: hsl(235, 45%, 61%);
 }
+
 .timeline p:nth-child(2) {
   color: white;
 }
+
 .attribution {
   bottom: 0;
   position: fixed;
 }
 
-/* WORK CARD */
-.work-card {
-  display: flex;
+.work, .play, .study, .exercise, .social, .self-care {
   margin: 50px 30px 0px 30px;
-  border-radius: 10px 10px;
+}
+
+.work-card {
   background-color: hsl(15, 100%, 70%);
 }
 
-.work-card img{
-  float: right;
+.play-card {
+  background-color:hsl(195, 74%, 62%);
 }
+
+.study-card {
+  background-color: hsl(348, 100%, 68%);
+}
+
+.exercise-card {
+  background-color: hsl(145, 58%, 55%);
+}
+
+.social-card {
+  background-color: hsl(264, 64%, 52%);
+}
+
+.self-care-card {
+  background-color: hsl(43, 84%, 65%);
+}
+
+.work-card, .play-card, .study-card, .exercise-card, 
+.social-card, .self-care-card {
+  display: flex;
+  height: 70px;
+  justify-content: flex-end;
+  border-radius: 10px;
+}
+
+
+/*CARD DETAILS */
+.card-details {
+  display: flex;
+  flex-direction: column;
+  color: whitesmoke;
+  border-radius: 10px;
+  margin-top: -20px;
+  padding: 20px;
+  background-color: hsl(235, 46%, 20%);
+  position: relative;
+  z-index: 1;
+}
+
+.card-details:hover {
+  background-color: hsl(235, 46%, 35%);
+  cursor: pointer;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.title-work, .title-play, .title-study, .title-exercise, 
+.title-social, .title-self-care {
+  font-size: 18px;
+}
+
+.time {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 400;
+  font-size: 36px;
+}
+
+.last-week-duration {
+  font-size: 18px;
+  font-weight: 300;
+  height: fit-content;
+}
+
+.three-dots:hover {
+  color: white;
+}
+
+@media only screen and (min-width: 1200px) {
+  .all-content {
+    display: flex;
+  }
+
+  .header-card {
+    width: 35%;
+    margin: 10px 0px 0px 30px;
+    background-color: hsl(226, 43%, 10%);
+    height: 100vh;
+  }
+
+  .cards {
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    height: 100vh;
+  }
+
+  .time {
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .work, .play, .study, .exercise, .social, .self-care {
+    margin: 10px 20px 0px 0px;
+    width: 27%;
+  }
+
+  .card-details {
+    justify-content: space-between;
+  }
+
+  .last-week-duration {
+    margin-top: 25px;
+  }
+
+  .header {
+    margin-bottom: 25px;
+  }
+
+  .work-card, .play-card, .study-card, .exercise-card, 
+  .social-card, .self-care-card {
+    height: 23%;
+  }
+
+  .profile {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 30px 0px 40px 20px;
+  }
+
+  .timeline {
+    flex-direction: column;
+    padding: 0px 15px 0px 15px;
+  }
+
+  .profile-image {
+    width: 45%;
+  }
+} 
+
