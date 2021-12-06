@@ -27,13 +27,16 @@ body {
 
 .profile-image {
   width: 30%;
-  border-radius: 50%;
+  
 }
 
 #profile-image {
+  border-radius: 50%;
+  border: 3px solid white;
   width: 70%;
   display: flex;
   margin: 0 10%;
+  
 }
 
 .profile-details {
