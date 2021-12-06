@@ -9,8 +9,10 @@
 
 -Click on the below links to view the live project.
 
+
 - [GitHub Pages](https://njuguna-johnbrian.github.io/Time-Tracking-Dashboard-UI.github.io/)
-- [Vercel](https://vercel.com/Coming Soon)
+- [Vercel](https://vercel.com/ComingSoon)
 - [Netlify](https://timetrackingdashboardui.netlify.app/)
+
 
 **Have fun viewing!** 🚀
